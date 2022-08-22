@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css"/> 
+
+    <title>Game of life</title>
+</head>
+<body>
+    <div id='canvas'></div>
+    
+    <div class="control-container">
+        <!-- <input type="button" class="classic-btn" value=""></input> -->
+        <div class="row first">
+            <div class="col-md-6 slider-container">
+                <div class="slider-section">
+                    <input type="range" min="0" max="100" value="30" class="slider" id="fpsRange">
+                    <div class="currentFPS-section">Current FPS: <span class="currentFPS"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="button-section">
+                    <input type="button" class="start-btn" value="Start"></input>
+                    <input type="button" class="reset-btn" value="Clear"></input> 
+                    <input type="button" class="random-btn" value="Random"></input>
+                    <input type="button" class="keyboard-mode" value="Keyboard Mode"></input>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="row second">
+            <div class="col-md-6">
+                <div class="classic-patterns">
+                    <input type="button" class="glider-btn classic-btn" value="Glider"></input>
+                    <input type="button" class="gosper-gun-btn classic-btn" value="Gosper glider gun"></input>
+                    <input type="button" class="train-btn classic-btn" value="Lightweight train"></input> 
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="rules-section">
+                    <div class="change-rules-container">
+                        <h3 class="change-rules">Customised your Rules:</h3> 
+                    </div>           
+                    <form class="game-rules">
+                            If a box has life and it has less than <input class="loneliness" type="text" value="2"> neighbors. It dies of loneliness. The box becomes lifeless next generation.<br>
+                            If a box has life and it has more than <input class="overpopulation" type="text" value="3"> neighbors. It dies of overpopulation. The box becomes lifeless next generation.<br>
+                            If a box has life and it has <span class="loneliness">2</span> to <span class="overpopulation">3</span> neighbors. Nothing changes for this box.<br>
+                            If a box has no life and it has <span class="overpopulation">3</span> neighbors, the box in next generation fills with life because of reproduction.
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
+
+<!-- <input type="button" class="plain-start-btn" value="Plain Start"></input> -->
+<!-- <input type="button" class="next-step-btn" value="Next Step"></input>  -->

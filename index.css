@@ -1,0 +1,59 @@
+body{
+
+
+}
+
+
+.control-panel{
+
+}
+
+
+.slider-container{
+    margin: 10px 0;
+
+}
+
+.slider-section{
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+
+}
+
+.button-section{
+    display:flex;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    font-size: 30px;
+    padding-bottom: 10px;
+    
+
+}
+
+.keyboard-mode{
+    border-radius: ;
+
+
+}
+
+
+.classic-patterns{
+    border-radius: 10px;
+
+
+}
+
+.rules-section{
+    margin: 10px 10px;
+    padding: 30px 10px;
+    border:1px solid black;
+    border-radius: 20px;
+
+}
+
+.classic-btn{
+    border: 1px solid black;
+}
+
+
